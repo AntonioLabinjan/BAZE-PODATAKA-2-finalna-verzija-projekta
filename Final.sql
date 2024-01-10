@@ -2944,7 +2944,7 @@ GROUP BY
 HAVING
     COUNT(*) > 3;
 
-# 11) Napiši funkciju koja će za osobu određenu predanim id_jem odrediti sve uloge koje je ta osoba imala u slučajevima
+# 12) Napiši funkciju koja će za osobu određenu predanim id_jem odrediti sve uloge koje je ta osoba imala u slučajevima
 DELIMITER //
 
 CREATE FUNCTION Uloge_Osobe_U_Slucajevima(osoba_id INT) RETURNS VARCHAR(255)
@@ -2993,7 +2993,7 @@ SELECT id, ime_prezime, Uloge_Osobe_U_Slucajevima(id) AS uloge
 FROM Osoba;
 
 -- DROP FUNCTION Sumnjivost_Osobe;
-#12) Funkcija koja će vratiti je li osoba sumnjiva (već je osumnjičena na nekim slučajevima) ili nije sumnjiva 
+#13) Funkcija koja će vratiti je li osoba sumnjiva (već je osumnjičena na nekim slučajevima) ili nije sumnjiva 
  
 DELIMITER //
  
@@ -3024,7 +3024,7 @@ DELIMITER ;
 SELECT id, ime_prezime, Sumnjivost_Osobe(id) AS sumnjivost
 FROM Osoba;
 
-# 13)Napiši funkciju koja će za dani odjel definiran id-jem koji joj prosljeđujemo za argument vratiti broj zaposlenih na tom odjelu u zadnjih 6 mjeseci
+# 14)Napiši funkciju koja će za dani odjel definiran id-jem koji joj prosljeđujemo za argument vratiti broj zaposlenih na tom odjelu u zadnjih 6 mjeseci
 DELIMITER //
 
 CREATE FUNCTION Broj_zaposlenih_6mj(odjel_id INT) 
@@ -3050,7 +3050,7 @@ FROM odjeli
 ORDER BY Broj_zaposlenih DESC
 LIMIT 1;
 
-# 14)Napiši funkciju koja će za odjel definiran prosljeđenim id-jem dohvatiti broj zaposlenih i broj slučajeva. Zatim
+# 15)Napiši funkciju koja će za odjel definiran prosljeđenim id-jem dohvatiti broj zaposlenih i broj slučajeva. Zatim
 # će računati koliko prosječno ima slučajeva po osobi na tom odjelu
 DELIMITER //
 
