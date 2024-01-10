@@ -1,4 +1,4 @@
-/*DROP DATABASE IF EXISTS Policija;
+DROP DATABASE IF EXISTS Policija;
 CREATE DATABASE Policija;
 
 USE Policija;
