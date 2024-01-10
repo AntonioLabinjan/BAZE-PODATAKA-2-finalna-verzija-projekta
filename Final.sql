@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS Policija;
+/*DROP DATABASE IF EXISTS Policija;
 CREATE DATABASE Policija;
 
 USE Policija;
@@ -847,7 +847,6 @@ FROM Sredstvo_utvrdivanja_istine SUI
 LEFT JOIN Sui_slucaj SS ON SUI.id = SS.Id_sui
 GROUP BY SUI.id;
 
-
 # 6) Napravi pogled koji će izlistati sve slučajeve i sredstva utvrđivanja istine u njima, te izračunati trajanje svakog od slučajeva
 
 CREATE VIEW slucajevi_sortirani_po_trajanju_sredstva AS
@@ -910,8 +909,7 @@ JOIN Kaznjiva_Djela KD ON KDS.id_kaznjivo_djelo = KD.id
 GROUP BY KD.Naziv;
 
 
-SELECT * From StatistikaZapljenaPoKaznenomDjelu;
--- DROP VIEW StatistikaZapljenaPoKaznenomDjelu;
+
 
 # 11) Napravi POGLED koji će za svaki slučaj izračunati ukupnu zatvorsku kaznu, uz ograničenje da maksimalna zakonska zatvorska kazna u RH iznosi 50 godina. Ako ukupna kazna premaši 50, postaviti će se na 50 uz odgovarajuće upozorenje
 CREATE VIEW ukupna_predvidena_kazna_po_slucaju AS
@@ -932,12 +930,13 @@ GROUP BY S.id, S.naziv;
 
 # 12)Napiši POGLED koji će za sve policijske službenike dohvatiti njihovu dob i godine staža (ukoliko je još aktivan, oduzimat ćemo od trenutne godine godinu zaposlenja, a ako je umirovljen, oduzimat će od godine umirovljenja godinu zaposlenja)
 # Onda dodat još stupac koji prati dali je umirovljen ili aktivan
+SELECT * FROM pogled_policijskih_sluzbenika;
 CREATE VIEW pogled_policijskih_sluzbenika AS
 SELECT
     O.Id AS zaposlenik_id,
     O.Ime_Prezime AS ime_prezime_osobe,
     O.datum_rodenja AS datum_rodenja_osobe,
-    DATEDIFF(CURRENT_DATE, Z.Datum_zaposlenja) AS Godine_Staza,
+    TIMESTAMPDIFF(YEAR, Z.datum_zaposlenja, CURRENT_DATE) AS Godine_Staza,
     CASE
         WHEN Z.datum_izlaska_iz_sluzbe IS NOT NULL AND Z.Datum_izlaska_iz_sluzbe <= CURRENT_DATE THEN 'Da'
         ELSE 'Ne'
@@ -945,8 +944,9 @@ SELECT
 FROM Osoba O
 INNER JOIN Zaposlenik Z ON O.Id = Z.id_osoba;
 
+
 # 13) Napravi pogled koji će dohvaćati sve osumnjičenike, zajedno s kažnjivim djelima za koja su osumnjičeni
-CREATE VIEW pogled_osumnjicene_osobe_ AS
+CREATE VIEW pogled_osumnjicene_osobe AS
 SELECT DISTINCT O.Ime_Prezime, KD.Naziv AS 'naziv_kaznjivog_djela'
 FROM Osoba O
 JOIN Slucaj S ON O.Id = S.id_pocinitelj
@@ -1024,7 +1024,7 @@ FROM Kaznjiva_djela_u_slucaju KDS
 JOIN Kaznjiva_Djela KD ON KDS.id_kaznjivo_djelo = KD.ID
 JOIN Evidencija_Dogadaja ED ON KDS.id_slucaj = ED.id_slucaj;
 
-SELECT * FROM Kaznjiva_Djela_Na_Mjestu WHERE id_mjesto = 1;
+SELECT * FROM Kaznjiva_Djela_Na_Mjestu WHERE id_mjesto = 4;
 
 
 # 19) Napravi pogled koji će dohvatiti sve osobe, slučajeve koje su počinili i KD u njima
@@ -1073,6 +1073,7 @@ JOIN
     Osoba O ON O.id = Z.id_osoba
 WHERE 
     S.Pocetak BETWEEN CURDATE() - INTERVAL 10000 DAY AND CURDATE(); # OVAJ INTERVAL MIJENJAMO PREMA POTREBI
+
 ##############################################################################################################################################
 # 23) Napiši pogled koja će dohvaćati slučajeve koji sadrže određeno kazneno djelo i sortirati ih po vrijednosti zapljene silazno
 CREATE VIEW Slucajevi_po_kaznjivom_djelu AS
@@ -1559,8 +1560,8 @@ BEGIN
 END;
 
 //
-
-DELIMITER ;
+*/
+DELIMITER;
 
 DELIMITER //
 
@@ -3389,6 +3390,3 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON Policija.Sui_slucaj TO 'detektiv'@'local
 GRANT SELECT, INSERT, UPDATE, DELETE ON Policija.Izvjestaji TO 'detektiv'@'localhost';
 FLUSH PRIVILEGES;
 */
-
-
-
