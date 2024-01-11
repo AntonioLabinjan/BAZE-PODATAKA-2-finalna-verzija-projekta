@@ -2461,6 +2461,30 @@ END;
 
 DELIMITER ;
 
+# 13
+	# Napravi proceduru koja će zabraniti da se zaposli osoba koja je evidntirana kao počinitelj na aktivnim slučajevima ili na slučajevima koji su završili u zadnjih 10 godina
+DELIMITER //
+
+CREATE PROCEDURE Provjeri_Okrivljenika(IN p_osoba_id INT)
+BEGIN
+    DECLARE okrivljenik_count INT;
+
+    SELECT COUNT(*)
+    INTO okrivljenik_count
+    FROM Osoba O
+    JOIN Slucaj S ON O.id = S.id_pocinitelj
+    WHERE O.id = p_osoba_id AND (S.status = 'Aktivan' OR S.zavrsetak >= DATE_SUB(NOW(), INTERVAL 10 YEAR));
+
+    IF okrivljenik_count > 0 THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Osoba nije podobna za zapošljavanje u policiji jer je nedavno bila okrivljenik.';
+    ELSE
+        SIGNAL SQLSTATE '02000' SET MESSAGE_TEXT = 'Osoba koju smo provjerili je podobna. Unos je dozvoljen.';
+    END IF;
+
+END //
+
+DELIMITER ;
+
 # 14) Procedura koja će primati id_vozila, izračunati trenutnu starost vozila te ako je starije od 15 godina i službeno, onda će ga postaviti na neslužbeno 
 DELIMITER //
 
@@ -2484,7 +2508,6 @@ BEGIN
 END //
 
 DELIMITER ;
-
 
 
 
