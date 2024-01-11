@@ -2483,7 +2483,7 @@ BEGIN
     END IF;
 END //
 
-DELIMITER 
+DELIMITER ;
 
 
 
@@ -3099,8 +3099,9 @@ WHERE Avg_Slucaj_Osoba_Odjel(id) >
 
 
 # TRANSAKCIJE
-################## A.R. #####################3
-#Kreiramo transakciju koja, uzimajući u obzir trenutačnu aktivnost pasa, dodjeljuje psa s najmanje slučajeva novom aktivnom slučaju.
+################## A.R. #####################
+########################## 1 #################
+	#Kreiramo transakciju koja, uzimajući u obzir trenutačnu aktivnost pasa, dodjeljuje psa s najmanje slučajeva novom aktivnom slučaju.
 # Imamo dosljedne podatke i psi su minimalno opterećeni.
 
 # FOR UPDATE klauzula se koristi da bimo tijekom čitanja informacija o broju slučajeva za aktivne pse zaključali retke, 
@@ -3150,7 +3151,7 @@ COMMIT;
 
 
 
-
+######################### 2 ###########################
 #########################################################################3
 ############################## A.L. ######################
 #  transakcija koja će omogućiti praćenje broja izvještaja za svaki slučaj
@@ -3204,7 +3205,7 @@ DROP TEMPORARY TABLE IF EXISTS TempBrojIzvjestaja;
 # Zatvaranje transakcije
 COMMIT;
 
-##################################################################################################
+################################ 3 ##############################################################
 ################# P.P. ######################
 #  izraditi SQL transakciju koja će analizirati događaje u evidenciji (tablica Evidencija_dogadaja) i stvoriti tri nove tablice događaja prema godinama.
 # Novo kreirane tablice trebaju sadržavati događaje koji su se dogodili u 2023., 2022. i 2021. godini.
@@ -3268,7 +3269,8 @@ COMMIT;
 
 # Napravi transakciju koja će pomoću procedure dodati 20 novih kažnjivih djela
 # Ovo baš i ni pametna transakcija...više je nastala iz znatiželje za provjerit dali funkcionira
-######################## N.H. #######################
+##################### 4 ######################
+	######################## N.H. #######################
 SET SESSION TRANSACTION ISOLATION LEVEL 
 READ COMMITTED;
 START TRANSACTION;
@@ -3302,6 +3304,7 @@ COMMIT;
 -- Postavljanje izolacijskog nivoa na REPEATABLE READ
 -- Osiguraj da se prilikom izvođenja transakcije ne obriše ili izmjeni niti jedno od službenih vozila (zato imamo repeatable read i zaključavanje)
 -- Postavljanje izolacijskog nivoa na REPEATABLE READ
+##################################### 5 #########################
 ################### A.Š. #####################
 SET SESSION TRANSACTION ISOLATION LEVEL REPEATABLE READ;
 START TRANSACTION;
