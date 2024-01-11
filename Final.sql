@@ -2461,7 +2461,29 @@ END;
 
 DELIMITER ;
 
+# 14) Procedura koja će primati id_vozila, izračunati trenutnu starost vozila te ako je starije od 15 godina i službeno, onda će ga postaviti na neslužbeno 
+DELIMITER //
 
+CREATE PROCEDURE Izracunaj_starost_vozila(IN p_id INT)
+BEGIN
+    DECLARE vozilo_starost INT;
+
+    SELECT YEAR(NOW()) - godina_proizvodnje INTO vozilo_starost
+    FROM Vozilo
+    WHERE id = p_id;
+
+    ALTER TABLE Vozilo ADD COLUMN  starost_vozila INT;
+
+    UPDATE Vozilo SET starost_vozila = vozilo_starost WHERE id = p_id;
+
+     IF (SELECT sluzbeno_vozilo FROM Vozilo WHERE id = p_id) = 1 THEN
+        IF vozilo_starost > 15 THEN
+            UPDATE Vozilo SET sluzbeno_vozilo = 0 WHERE id = p_id;
+        END IF;
+    END IF;
+END //
+
+DELIMITER 
 
 
 
