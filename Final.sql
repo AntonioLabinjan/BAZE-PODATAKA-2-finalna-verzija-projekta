@@ -1723,6 +1723,7 @@ DELIMITER ;
 
 # PROCEDURE (OVE ZA INSERT ZANEMARUJEMO U PREZENTACIJI) ##########################################
 
+# P
 DELIMITER //
 
 CREATE PROCEDURE Dodaj_Novo_Podrucje_Uprave(IN p_naziv VARCHAR(255))
@@ -1732,6 +1733,7 @@ END //
 
 DELIMITER ;
 
+# P
 # Napiši proceduru za unos novog mjesta
 DELIMITER //
 
@@ -1745,6 +1747,7 @@ END //
 
 DELIMITER ;
 
+# P
 # Napiši proceduru za unos nove zgrade
 DELIMITER //
 
@@ -1759,6 +1762,7 @@ END //
 
 DELIMITER ;
 
+# P
 # Napiši proceduru za unos novog radnog mjesta
 DELIMITER //
 
@@ -1772,6 +1776,7 @@ END //
 
 DELIMITER ;
 
+# P
 # Napiši proceduru za unos novog odjela
 DELIMITER //
 
@@ -1785,6 +1790,7 @@ END //
 
 DELIMITER ;
 
+# P
 # Napiši proceduru za unos nove osobe
 DELIMITER //
 
@@ -1805,6 +1811,7 @@ END //
 
 DELIMITER ;
 
+# P
 # Procedura za unos novog zaposlenika
 DELIMITER //
 
@@ -1825,7 +1832,7 @@ END //
 DELIMITER ;
 
 
-
+# P
 # Napiši proceduru za dodavanje novog predmeta
 DELIMITER //
 
@@ -1841,6 +1848,7 @@ END //
 
 DELIMITER ;
 
+# P
 # Napiši proceduru za dodavanje novog kaznjivog djela u bazu
 DELIMITER //
 
@@ -1857,6 +1865,7 @@ END //
 
 DELIMITER ;
 
+# P
 # Napiši proceduru za dodavanje novog psa
 DELIMITER //
 
@@ -1875,6 +1884,7 @@ END //
 
 DELIMITER ;
 
+# P
 # Napiši proceduru za dodavanje novog slučaja, ali neka se ukupna vrijednost zapljena i dalje računa automatski preko trigera
 DELIMITER //
 
@@ -1899,6 +1909,7 @@ END //
 
 DELIMITER ;
 
+# P
 # Napravi proceduru koja će dodati novi događaj
 DELIMITER //
 
@@ -1915,6 +1926,7 @@ END //
 
 DELIMITER ;
 
+# P
 # Napiši proceduru koja će dodavati kažnjiva djela u slučaju
 DELIMITER //
 
@@ -1932,6 +1944,7 @@ DELIMITER ;
 
 DELIMITER //
 
+# P
 # Napiši proceduru za dodavanje izvještaja
 CREATE PROCEDURE Dodaj_Izvjestaj(
     IN p_naslov VARCHAR(255),
@@ -1946,6 +1959,7 @@ END //
 
 DELIMITER ;
 
+# P
 # Napiši proceduru za dodavanje zapljena
 DELIMITER //
 
@@ -1963,6 +1977,7 @@ END //
 DELIMITER ;
 
 
+# P
 # Napiši proceduru za dodavanje sredstva utvrđivanja istine
 DELIMITER //
 
@@ -1976,6 +1991,7 @@ END //
 
 DELIMITER ;
 
+# P
 # Napiši proceduru za dodavanje SUI slučaj
 DELIMITER //
 
@@ -1990,6 +2006,7 @@ END //
 
 DELIMITER ;
 
+#1
 # Procedura za unos novog vozila; ukoliko je vozilo službeno, ono će imati id_vlasnik koji će predstavljati službenika koji najviše koristi vozilo, ali postaviti će se napomena da je vlasnik MUP
 
 SELECT * FROM vozilo;
@@ -2041,7 +2058,7 @@ SELECT * FROM vozilo;
 
 
 
-
+#2
 # Napiši proceduru koja će kreirati novu privremenu tablicu u kojoj će se prikazati svi psi i broj slučajeva na kojima su radili. Zatim će dodati novi stupac tablici pas i u njega upisati "nagrađeni pas" kod svih pasa koji su radili na više od 15 slučajeva 
 ################## A.Š. ######################
 -- Postavljanje sql_safe_updates na 0
@@ -2070,6 +2087,7 @@ DELIMITER ;
 SELECT * FROM Pas;
 CALL Godisnje_nagrađivanje_pasa();
 
+#3
 # Napiši sličnu proceduru za godišnje nagrađivanje zaposlenika (ovo je nova procedura po uzoru na gornju)
 ################################## N.H. ################################
 	DELIMITER //
@@ -2093,6 +2111,7 @@ DELIMITER ;
 
 SELECT * FROM Slucajevi_u_posljednjih_n_dana;
 SELECT * FROM slucaj;
+#4
 # Napiši proceduru koja će za određenu osobu kreirati potvrdu o nekažnjavanju. To će napraviti samo u slučaju da osoba stvarno nije evidentirana niti u jednom slučaju kao počinitelj. Ukoliko je osoba kažnjavana i za to ćemo dobiti odgovarajuću obavijest. Također,ako uspješno izdamo potvrdu, neka se prikaže i datum izdavanja
 # Neka id_slucaj za izvještaj bude 999 kako ne bismo morali mijenjati shemu baze
 -- DROP PROCEDURE ProvjeriNekažnjavanje;
@@ -2138,6 +2157,7 @@ SELECT * FROM Izvjestaji;
 CALL ProvjeriNekažnjavanje(1);
 SELECT * FROM Izvjestaji;
 
+#5
 # Napiši proceduru koja će omogućiti da za određenu osobu izmjenimo kontakt informacije (email i/ili broj telefona)
 ######################## A.Š. ####################
 	DELIMITER //
@@ -2166,6 +2186,7 @@ DELIMITER ;
 SELECT * FROM Osoba;
 CALL IzmjeniKontaktInformacije (1, 'a@b.com', 091333333);
 
+
 # Napiši proceduru koja će za određeni slučaj izlistati sve događaje koji su se u njemu dogodili i poredati ih kronološki (OVO JE VIEW)
 CREATE VIEW Pregled_Dogadaji AS
 SELECT ed.Id, ed.opis_dogadaja, ed.datum_vrijeme, ed.id_slucaj
@@ -2189,6 +2210,7 @@ GROUP BY
 # Napiši proceduru koja će za određeno KD moći smanjiti ili povećati predviđenu kaznu tako što će za argument primiti naziv KD i broj godina za koji želimo izmjeniti kaznu
 # Ako želimo smanjiti kaznu, za argument ćemo prosljediti negativan broj
 ################# M.A. #########################
+#6
 	DELIMITER //
 CREATE PROCEDURE izmjeni_kaznu(IN naziv_djela VARCHAR(255), IN iznos INT)
 BEGIN
@@ -2212,6 +2234,7 @@ DELIMITER ;
 SELECT * FROM Kaznjiva_djela;
 CALL izmjeni_kaznu ('Otmica', 4);
 
+#7
 # Napravi sličnu proceduru za promjenu novčane kazne
 ################# P.P. ########################	
 	DELIMITER //
@@ -2241,6 +2264,7 @@ DELIMITER ;
 
 # Napiši proceduru koja će služiti za unaprijeđenje policijskih službenika na novo radno mjesto. Ako je novo radno mjesto jednako onom radnom mjestu osobe koja im je prije bila nadređena, postaviti će id_nadređeni na NULL
 -- DROP PROCEDURE UnaprijediPolicijskogSluzbenika;
+#8
 #################### P.P. ##########################
 	DELIMITER //
 
@@ -2279,7 +2303,8 @@ SELECT Zaposlenik.*, Radno_mjesto.id FROM Zaposlenik, Radno_mjesto WHERE Zaposle
 CALL UnaprijediPolicijskogSluzbenika(1,2);
 # Napravi proceduru koja će provjeravati je li zatvorska kazna istekla 
 # Ova je grda
-#################################### A.L. 
+#9
+	#################################### A.L. 
 	DELIMITER //
 
 CREATE PROCEDURE ProvjeriIstekZatvorskeKazne()
@@ -2373,6 +2398,7 @@ DELIMITER ;
 #2. Procedura (naziv "nagodba") koja će za počinitelja (p_id_pocinitelj) pozatvarati sve njegove otvorene slučajeve i postaviti sve potrebne vrijednosti na odgovarajuća mjesta što god treba (npr. u opis svakog slučaja dodati "(zaključen nagodbom)", postaviti datum_završetka, status itd.) -> tu bi mu trebala kazna u godinama biti manja, ali ne vidin način da to napravite pa taj dio možete zanemarit
 #SELECT * FROM slucaj;
 
+#10
 DELIMITER //
 
 CREATE PROCEDURE nagodba(p_id_pocinitelj INT)
@@ -2412,7 +2438,7 @@ DELIMITER ;
 #SELECT * FROM sredstvo_utvrdivanja_istine;
 
 
-
+#11)
 DELIMITER //
 
 CREATE PROCEDURE PostaviNaPoligraf(p_id_pocinitelj INT)
@@ -2436,6 +2462,7 @@ END;
 
 DELIMITER ;
 -- Stvaranje procedura za provjeru kazne i postavljanje počinitelja na poligraf
+#12)
 DELIMITER //
 
 CREATE PROCEDURE Provjera_kazna_poligraf(
