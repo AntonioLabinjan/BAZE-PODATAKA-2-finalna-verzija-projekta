@@ -3053,68 +3053,50 @@ LIMIT 1;
 
 COMMIT;
 
-
-
-
-######################### 2 ###########################
-#########################################################################3
-############################## A.L. ######################
-#  transakcija koja će omogućiti praćenje broja izvještaja za svaki slučaj
+# 2
+# Transakcija koja će omogućiti praćenje broja izvještaja za svaki slučaj
 # Prva transakcija za dodavanje stupca broj_izvjestaja u tablicu Slucaj
+
 SET SESSION TRANSACTION ISOLATION LEVEL REPEATABLE READ;
 START TRANSACTION;
 
-# Dodavanje stupca broj_izvjestaja u tablicu Slucaj
 ALTER TABLE Slucaj
 ADD COLUMN broj_izvjestaja INT DEFAULT 0;
 
-# Zatvaranje prve transakcije
 COMMIT;
 
-# Postavljanje izolacijskog nivoa na REPEATABLE READ
 SET SESSION TRANSACTION ISOLATION LEVEL REPEATABLE READ;
 START TRANSACTION;
 
-# Dohvaćanje ID-a osobe koja će biti autor izvještaja
 SET @id_autor = (SELECT id FROM Osoba WHERE ime_prezime = 'Ime_Prezime' LIMIT 1);
 
-# Dohvaćanje ID-a slučaja za koji ćemo kreirati izvještaj
 SET @id_slucaj = (SELECT id FROM Slucaj WHERE naziv = 'NazivSlucaja' LIMIT 1);
 
-# Privremena tablica za praćenje broja izvještaja po slučaju
 CREATE TEMPORARY TABLE IF NOT EXISTS TempBrojIzvjestaja (
     id_slucaj INT,
     broj_izvjestaja INT
 );
 
-# Inicijalizacija broja izvještaja na 0 za odabrani slučaj
 INSERT INTO TempBrojIzvjestaja (id_slucaj, broj_izvjestaja)
 VALUES (@id_slucaj, 0)
 ON DUPLICATE KEY UPDATE broj_izvjestaja = broj_izvjestaja;
 
-
-
-# Ažuriranje broja izvještaja za odabrani slučaj u privremenoj tablici
 UPDATE TempBrojIzvjestaja
 SET broj_izvjestaja = broj_izvjestaja + 1
 WHERE id_slucaj = @id_slucaj;
 
-# Ažuriranje ukupnog broja izvještaja za odabrani slučaj u tablici Slucaj
 UPDATE Slucaj
 SET broj_izvjestaja = (SELECT broj_izvjestaja FROM TempBrojIzvjestaja WHERE id_slucaj = @id_slucaj)
 WHERE id = @id_slucaj;
 
-# Brisanje privremene tablice
 DROP TEMPORARY TABLE IF EXISTS TempBrojIzvjestaja;
 
-# Zatvaranje transakcije
 COMMIT;
 
-################################ 3 ##############################################################
-################# P.P. ######################
-#  izraditi SQL transakciju koja će analizirati događaje u evidenciji (tablica Evidencija_dogadaja) i stvoriti tri nove tablice događaja prema godinama.
+# 3
+# Izraditi SQL transakciju koja će analizirati događaje u evidenciji (tablica Evidencija_dogadaja) i stvoriti tri nove tablice događaja prema godinama.
 # Novo kreirane tablice trebaju sadržavati događaje koji su se dogodili u 2023., 2022. i 2021. godini.
-# Postavljanje izolacijskog nivoa na REPEATABLE READ
+
 SET SESSION TRANSACTION ISOLATION LEVEL REPEATABLE READ;
 START TRANSACTION;
 
@@ -3129,7 +3111,6 @@ CREATE TABLE IF NOT EXISTS Događaji_2023 (
     FOREIGN KEY (id_mjesto) REFERENCES Mjesto(id)
 );
 
-# Insert događaja u 2023. godinu
 INSERT INTO Događaji_2023 (id_slucaj, opis_dogadaja, datum_vrijeme, id_mjesto)
 SELECT id_slucaj, opis_dogadaja, datum_vrijeme, id_mjesto
 FROM Evidencija_dogadaja
@@ -3146,7 +3127,6 @@ CREATE TABLE IF NOT EXISTS Događaji_2022 (
     FOREIGN KEY (id_mjesto) REFERENCES Mjesto(id)
 );
 
-# Insert događaja u 2022. godinu
 INSERT INTO Događaji_2022 (id_slucaj, opis_dogadaja, datum_vrijeme, id_mjesto)
 SELECT id_slucaj, opis_dogadaja, datum_vrijeme, id_mjesto
 FROM Evidencija_dogadaja
@@ -3163,19 +3143,16 @@ CREATE TABLE IF NOT EXISTS Događaji_2021 (
     FOREIGN KEY (id_mjesto) REFERENCES Mjesto(id)
 );
 
-# Insert događaja u 2021. godinu
 INSERT INTO Događaji_2021 (id_slucaj, opis_dogadaja, datum_vrijeme, id_mjesto)
 SELECT id_slucaj, opis_dogadaja, datum_vrijeme, id_mjesto
 FROM Evidencija_dogadaja
 WHERE YEAR(datum_vrijeme) = 2021;
 
-# Zatvaranje transakcije
 COMMIT;
 
+# 4
 # Napravi transakciju koja će pomoću procedure dodati 20 novih kažnjivih djela
-# Ovo baš i ni pametna transakcija...više je nastala iz znatiželje za provjerit dali funkcionira
-##################### 4 ######################
-	######################## N.H. #######################
+
 SET SESSION TRANSACTION ISOLATION LEVEL 
 READ COMMITTED;
 START TRANSACTION;
@@ -3203,25 +3180,19 @@ CALL Dodaj_Novo_Kaznjivo_Djelo('Dijamantna pljačka', 'Oružana pljačka dragulj
 
 COMMIT;
 
+# 5
+# Napravi transakciju koja će omogućiti pregled svih službenih vozila. Neka se stupac id_vlasnik pretvori u stupac vlasnik tipa VARCHAR zato što je
+# vlasnik svih službenih vozila MUP
+# Osiguraj da se prilikom izvođenja transakcije ne obriše ili izmjeni niti jedno od službenih vozila (zato imamo repeatable read i zaključavanje)
 
--- Napravi transakciju koja će omogućiti pregled svih službenih vozila. Neka se stupac id_vlasnik pretvori u stupac vlasnik tipa VARCHAR zato što je
--- vlasnik svih službenih vozila MUP
--- Postavljanje izolacijskog nivoa na REPEATABLE READ
--- Osiguraj da se prilikom izvođenja transakcije ne obriše ili izmjeni niti jedno od službenih vozila (zato imamo repeatable read i zaključavanje)
--- Postavljanje izolacijskog nivoa na REPEATABLE READ
-##################################### 5 #########################
-################### A.Š. #####################
 SET SESSION TRANSACTION ISOLATION LEVEL REPEATABLE READ;
 START TRANSACTION;
 
-# Dodavanje novog stupca 'Napomena za službena vozila'
 ALTER TABLE Vozilo
 ADD COLUMN napomena_službena_vozila VARCHAR(255);
 
-# Dobivanje zaključavanja za službena vozila
-SELECT * FROM Vozilo WHERE sluzbeno_vozilo = 1 FOR UPDATE NOWAIT; -- pokušavamo zaključati retke, ali ako su već zaključani ne čekamo, nego odmah vraća grešku i prekine transakciju
+SELECT * FROM Vozilo WHERE sluzbeno_vozilo = 1 FOR UPDATE NOWAIT; 
 
-# Kreiranje privremene tablice Pregled_službenih_vozila
 CREATE TEMPORARY TABLE IF NOT EXISTS Pregled_službenih_vozila (
     id INT,
     marka VARCHAR(255),
@@ -3233,31 +3204,25 @@ CREATE TEMPORARY TABLE IF NOT EXISTS Pregled_službenih_vozila (
     napomena_službena_vozila VARCHAR(255)
 );
 
-# Kopiranje podataka o službenim vozilima u privremenu tablicu i postavljanje 'Napomena za službena vozila'
 INSERT INTO Pregled_službenih_vozila (id, marka, model, registracija, godina_proizvodnje, sluzbeno_vozilo, vlasnik, napomena_službena_vozila)
 SELECT id, marka, model, registracija, godina_proizvodnje, sluzbeno_vozilo, 'Ministarstvo Unutarnjih Poslova' AS vlasnik, 'Ministarstvo Unutarnjih Poslova' AS napomena_službena_vozila
 FROM Vozilo
 WHERE sluzbeno_vozilo = 1;
 
--- Zatvaranje transakcije
 COMMIT;
 
-################### A.Š. ###################
+
 # KORISNICI
-# KORISNICI (autentifikacija/autorizacija)
-# OVAKO SMO TESTIRALI KORISNIKE U SQL-u (napravimo ga, dodamo mu prava, oduzmemo mu prava, dropamo ga
-# Kreiranje admin korisnika
-/*
 
 CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin_password';
 GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
-# prikaz ovlasti
+
 SHOW GRANTS FOR 'admin'@'localhost';
-# oduzimanje ovlasti
+
 REVOKE ALL PRIVILEGES ON *.* FROM 'admin'@'localhost';
 FLUSH PRIVILEGES;
-# brisanje korisnika
+
 DROP USER 'admin'@'localhost';
 
 
@@ -3267,12 +3232,12 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON Policija.Radno_mjesto TO 'hr'@'localhost
 GRANT SELECT, INSERT, UPDATE, DELETE ON Policija.Odjeli TO 'hr'@'localhost';
 GRANT SELECT, INSERT, UPDATE, DELETE ON Policija.Zaposlenik TO 'hr'@'localhost';
 FLUSH PRIVILEGES;
-# prikaz ovlasti
+
 SHOW GRANTS FOR 'hr'@'localhost';
-# oduzimanje ovlasti
+
 REVOKE ALL PRIVILEGES ON *.* FROM 'hr'@'localhost';
 FLUSH PRIVILEGES;
-# brisanje korisnika
+
 DROP USER 'hr'@'localhost';
 
 # Napravi korisnika za običnu fizičku osobu koja nije djelatnik policije i ima pristup samo osnovnijim, neklasificiranim tablicama
@@ -3288,12 +3253,13 @@ GRANT SELECT ON Policija.Sredstvo_utvrdivanja_istine TO 'fizicka_osoba'@'localho
 FLUSH PRIVILEGES;
 
 SHOW GRANTS FOR 'fizicka_osoba'@'localhost';
+
 REVOKE ALL PRIVILEGES ON *.* FROM 'fizicka_osoba'@'localhost';
 FLUSH PRIVILEGES;
-# brisanje korisnika
+
 DROP USER 'fizicka_osoba'@'localhost';
 
-# Napravi korisnika 'detektiv' (ne znan dali je to egzaktan naziv, ali ok...valjda ni toliko bitno) koji će biti zadužen za prikupljanje dokaza na slučajevima, predmete, sredstva_utvrđivanja_istine i sastavljanje izvještaja
+# Napravi korisnika 'detektiv' koji će biti zadužen za prikupljanje dokaza na slučajevima, predmete, sredstva_utvrđivanja_istine i sastavljanje izvještaja
 CREATE USER 'detektiv'@'localhost' IDENTIFIED BY 'detektiv_password';
 GRANT SELECT, INSERT, UPDATE, DELETE ON Policija.Predmet TO 'detektiv'@'localhost';
 GRANT SELECT, INSERT, UPDATE, DELETE ON Policija.Slucaj TO 'detektiv'@'localhost';
@@ -3301,4 +3267,4 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON Policija.Sui TO 'detektiv'@'localhost';
 GRANT SELECT, INSERT, UPDATE, DELETE ON Policija.Sui_slucaj TO 'detektiv'@'localhost';
 GRANT SELECT, INSERT, UPDATE, DELETE ON Policija.Izvjestaji TO 'detektiv'@'localhost';
 FLUSH PRIVILEGES;
-*/
+
