@@ -2248,8 +2248,40 @@ SELECT Zaposlenik.*, Radno_mjesto.id FROM Zaposlenik, Radno_mjesto WHERE Zaposle
 CALL UnaprijediPolicijskogSluzbenika(1,2);
 
 # 9
-# Napravi proceduru koja će provjeravati je li zatvorska kazna istekla 
-	
+# Napravi procedure koja će svakom zatvoreniku dodati broj dana u zatvoru provjeravati je li zatvorska kazna istekla 
+ALTER TABLE Osoba ADD COLUMN broj_dana_u_zatvoru INT;
+DELIMITER //
+
+CREATE PROCEDURE AzurirajPodatkeZatvor()
+BEGIN
+
+    UPDATE Osoba O
+    JOIN Slucaj S ON O.id = S.id_pocinitelj
+    SET O.Broj_dana_u_zatvoru = DATEDIFF(NOW(), S.zavrsetak)
+    WHERE S.status = 'riješen';
+    
+END //
+
+DELIMITER ;
+
+CALL AzurirajPodatkeZatvor();
+# Aktiviramo Event Scheduler ako već nije aktivan
+SET GLOBAL event_scheduler = ON;
+
+-- Stvaramo
+DELIMITER //
+
+CREATE EVENT IF NOT EXISTS Dnevno_odbrojavanje
+ON SCHEDULE
+    EVERY 1 DAY
+    STARTS CURRENT_DATE
+DO
+    CALL AzurirajPodatkeZatvor(); # pretpostavljamo da je osoba zatvorena točno na dan završetka slučaja
+
+//
+
+DELIMITER ;
+	###### 2. dio ####
 DELIMITER //
 
 CREATE PROCEDURE ProvjeriIstekZatvorskeKazne()
