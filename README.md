@@ -1,7 +1,8 @@
 <p align="center">
-<b>Policija</b> </p><br></br>
+<b>Policija</b> <br></br>
 Sveučilište Jurja Dobrile u Puli <br></br>
 Fakultet Informatike u Puli
+
 </p>
 Kolegij: Baze Podataka 2 <br></br>
 **Mentori:** 
