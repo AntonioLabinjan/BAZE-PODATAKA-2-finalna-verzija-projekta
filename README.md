@@ -161,4 +161,27 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
        <ol>Provjeri okrivljenika</ol>
        <ol>Izracunaj starost vozila</ol>
 </ul>     
+<hr></hr>
+<ul><b><h3>Funkcije + upiti:</h3></b>
+ <ol>KDInfo</ol>
+ <ol>Informacije o osobi po telefonu</ol>
+ <ol>Dohvati slučaj i osobu</ol>
+ <ol>Izracunaj postotak rješenosti</ol>
+ <ol>Provjera vozila</ol>
+ <ol>Podaci o području</ol>
+ <ol>Broj kažnjivih djela u slučaju</ol>
+ <ol>Broj slučajeva po statusu</ol>
+ <ol>Informacije o slučaju</ol>
+ <ol>Zaposlenik slučaj</ol>
+ <ol>Osoba oštećenik</ol>
+ <ol>Uloge osobe u slučajevima</ol>
+ <ol>Sumnjivost osobe</ol>
+ <ol>Broj zaposlenih 6mj</ol>
+ <ol>Avg slucaj osoba odjel</ol>
+</ul>
+<hr></hr>
+
+
+
+
  
