@@ -194,4 +194,4 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
  <ol>fizicka osoba</ol>
  <ol>detektiv</ol>
 
- 
+<hr></hr> 
