@@ -1,5 +1,5 @@
 
-![Moj Logotip](img_1_1705166790276.png)
+![Moj Logotip](img_1_1705166790276.jpg)
 
 img_1_1705166790276
 
