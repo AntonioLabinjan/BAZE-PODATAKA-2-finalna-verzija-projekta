@@ -2,9 +2,9 @@
 <b>Policija</b> <br></br>
 Sveučilište Jurja Dobrile u Puli <br></br>
 Fakultet Informatike u Puli
-
-</p>
 Kolegij: Baze Podataka 2 <br></br>
+</p>
+<hr>
 **Mentori:** 
  <ul>doc. dr. sc. Goran Oreški</ul>
  <ul>Romeo Šajina, mag. inf.</ul>
