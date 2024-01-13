@@ -206,6 +206,6 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <hr></hr> 
 
 <ol>
-<ol>link na aplikaciju</ol>
+<ol><h3>link na aplikaciju</h3></ol>
 https://github.com/petarally/BP2_policija_aplikacija
 </ol>
