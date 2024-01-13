@@ -5,7 +5,7 @@
 <p align="center">
 <b>Policija</b> <br></br>
 Sveučilište Jurja Dobrile u Puli <br></br>
-Fakultet Informatike u Puli
+Fakultet Informatike u Puli<br></br>
 Kolegij: Baze Podataka 2 <br></br>
 </p>
 <hr>
