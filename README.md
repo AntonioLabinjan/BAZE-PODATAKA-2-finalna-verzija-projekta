@@ -165,35 +165,35 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 </ul>     
 <hr></hr>
 <ul><b><h3>Funkcije + upiti:</h3></b>
- <ol>KDInfo</ol>
- <ol>Informacije o osobi po telefonu</ol>
- <ol>Dohvati slučaj i osobu</ol>
- <ol>Izracunaj postotak rješenosti</ol>
- <ol>Provjera vozila</ol>
- <ol>Podaci o području</ol>
- <ol>Broj kažnjivih djela u slučaju</ol>
- <ol>Broj slučajeva po statusu</ol>
- <ol>Informacije o slučaju</ol>
- <ol>Zaposlenik slučaj</ol>
- <ol>Osoba oštećenik</ol>
- <ol>Uloge osobe u slučajevima</ol>
- <ol>Sumnjivost osobe</ol>
- <ol>Broj zaposlenih 6mj</ol>
- <ol>Avg slucaj osoba odjel</ol>
+ <ol>1) KDInfo</ol>
+ <ol>2) Informacije o osobi po telefonu</ol>
+ <ol>3) Dohvati slučaj i osobu</ol>
+ <ol>4) Izracunaj postotak rješenosti</ol>
+ <ol>5) Provjera vozila</ol>
+ <ol>6) Podaci o području</ol>
+ <ol>7) Broj kažnjivih djela u slučaju</ol>
+ <ol>8) Broj slučajeva po statusu</ol>
+ <ol>9) Informacije o slučaju</ol>
+ <ol>10) Zaposlenik slučaj</ol>
+ <ol>11) Osoba oštećenik</ol>
+ <ol>12) Uloge osobe u slučajevima</ol>
+ <ol>13) Sumnjivost osobe</ol>
+ <ol>14) Broj zaposlenih 6mj</ol>
+ <ol>15)Avg slucaj osoba odjel</ol>
 </ul>
 <hr></hr>
 <ul><b><h3>Transakcije:</h3></b>
- <ol>Minimalno opterećenje psa</ol>
- <ol>Broj izvještaja za slučaj</ol>
- <ol>Događaji u zadnje 3 godine</ol>
- <ol>Dodavanje kažnjivih djela</ol>
- <ol>Pregled službenih vozila</ol>
+ <ol>1) Minimalno opterećenje psa</ol>
+ <ol>2) Broj izvještaja za slučaj</ol>
+ <ol>3) Događaji u zadnje 3 godine</ol>
+ <ol>4) Dodavanje kažnjivih djela</ol>
+ <ol>5) Pregled službenih vozila</ol>
 </ul>
 <hr></hr>
 <ul><b><h3>Korisnici:</h3></b>
- <ol>admin</ol>
- <ol>hr</ol>
- <ol>fizicka osoba</ol>
- <ol>detektiv</ol>
+ <ol>1) admin</ol>
+ <ol>2) hr</ol>
+ <ol>3) fizicka osoba</ol>
+ <ol>4) detektiv</ol>
 </ul>
 <hr></hr> 
