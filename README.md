@@ -21,3 +21,4 @@ Kolegij: Baze Podataka 2 <br></br>
 <hr>
 Tema projekta je "Policija". <br></br>
 Na ovom se repozitoriju nalazi projektni zadatak tima 7.
+<hr>
