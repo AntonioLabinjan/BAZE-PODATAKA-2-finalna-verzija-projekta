@@ -122,7 +122,11 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <ol>Osiguranje provođenja poligrafskog ispitivanja</ol>
 <ol>Zabrana promjene zgrade zaposlenika izvan njegovog područja uprave</ol>
 </ul>
-
+* a
+ *a1
+ *a2
+*b
+ *b1
 <hr></hr>
 <ul><b>Procedure:</b>
    <ul>Trivijalne insert procedure:</ul>
