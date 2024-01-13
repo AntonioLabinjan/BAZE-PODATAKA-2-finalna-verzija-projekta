@@ -128,40 +128,40 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <ul><b>Procedure:</b>
  
  <h4>Trivijalne insert procedure:</h4>
-     <ol>Unos područja uprave</ol>
-     <ol>Unos mjesta</ol>
-     <ol>Unos zgrade</ol>
-     <ol>Unos radnog mjesta</ol>
-     <ol>Unos odjela</ol>
-     <ol>Unos osobe</ol>
-     <ol>Unos zaposlenika</ol>
-     <ol>Unos predmeta</ol>
-     <ol>Unos kažnjivog djela</ol>
-     <ol>Unos psa</ol>
-     <ol>Unos novog slučaja</ol>
-     <ol>Unos događaja u evidenciju</ol>
-     <ol>Unos kažnjivog djela u slučaju</ol>
-     <ol>Unos izvještaja</ol>
-     <ol>Unos zapljene</ol>
-     <ol>Unos sredstva utvrđivanja istine</ol>
-     <ol>Unos sredstva utvrđivanja istine u slučaju</ol>
+     <ol>1) Unos područja uprave</ol>
+     <ol>2) Unos mjesta</ol>
+     <ol>3) Unos zgrade</ol>
+     <ol>4) Unos radnog mjesta</ol>
+     <ol>5) Unos odjela</ol>
+     <ol>6) Unos osobe</ol>
+     <ol>7) Unos zaposlenika</ol>
+     <ol>8) Unos predmeta</ol>
+     <ol>9) Unos kažnjivog djela</ol>
+     <ol>10) Unos psa</ol>
+     <ol>11) Unos novog slučaja</ol>
+     <ol>12) Unos događaja u evidenciju</ol>
+     <ol>13) Unos kažnjivog djela u slučaju</ol>
+     <ol>14) Unos izvještaja</ol>
+     <ol>15) Unos zapljene</ol>
+     <ol>16) Unos sredstva utvrđivanja istine</ol>
+     <ol>17) Unos sredstva utvrđivanja istine u slučaju</ol>
 
  <h4>Naprednije procedure:</h4>
-       <ol>Unos vozila uz napomenu o vlasništvu</ol>
-       <ol>Godišnje nagrađivanje pasa</ol>
-       <ol>Godišnje nagrađivanje zaposlenika</ol>
-       <ol>Provjera nekažnjvanja</ol>
-       <ol>Izmjena kontakt informacija</ol>
-       <ol>Izmjeni kaznu</ol>
-       <ol>Izmjeni novčanu kaznu</ol>
-       <ol>Unaprijedi policijskog službenika</ol>
-       <ol>Ažuriraj podatke zatvor + event Dnevno odbrojavanje</ol>
-       <ol>Projveri istek zatvorske kazne + event Provjera isteka kazni</ol>
-       <ol>Nagodba</ol>
-       <ol>Broj zapljena u zgradi</ol>
-       <ol>Umirovi sluzbenika</ol>
-       <ol>Provjeri okrivljenika</ol>
-       <ol>Izracunaj starost vozila</ol>
+       <ol>18) Unos vozila uz napomenu o vlasništvu</ol>
+       <ol>19) Godišnje nagrađivanje pasa</ol>
+       <ol>20) Godišnje nagrađivanje zaposlenika</ol>
+       <ol>21) Provjera nekažnjvanja</ol>
+       <ol>22) Izmjena kontakt informacija</ol>
+       <ol>23) Izmjeni kaznu</ol>
+       <ol>24) Izmjeni novčanu kaznu</ol>
+       <ol>25) Unaprijedi policijskog službenika</ol>
+       <ol>26) Ažuriraj podatke zatvor + event Dnevno odbrojavanje</ol>
+       <ol>27) Provjeri istek zatvorske kazne + event Provjera isteka kazni</ol>
+       <ol>28) Nagodba</ol>
+       <ol>29) Broj zapljena u zgradi</ol>
+       <ol>30) Umirovi sluzbenika</ol>
+       <ol>31) Provjeri okrivljenika</ol>
+       <ol>32) Izracunaj starost vozila</ol>
 </ul>     
 <hr></hr>
 <ul><b><h3>Funkcije + upiti:</h3></b>
