@@ -23,6 +23,7 @@ Tema projekta je "Policija". <br></br>
 Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <hr>
 
+<h2>Deliverables</h2>
 <ul><b>Tablice:</b>
 <ol>Podrucje_uprave</ol>
 <ol>Mjesto</ol>
@@ -43,3 +44,4 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <ol>Sredstvo_utvrdivanja_istine</ol>
 <ol>Sui_slucaj</ol>
 </ul>
+
