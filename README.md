@@ -49,51 +49,51 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <hr>
 
 <ul><b>Upiti:</b>
- <ol>Ispiši prosječan broj godina osoba koje su prijavile digitalno nasilje</ol>
- <ol>Prikaži osobu čiji je nestanak posljednji prijavljen</ol>
-<ol>Prikaži najčešću vrstu kažnjivog djela</ol>
-<ol>Ispišimo sve voditelje slučajeva i slučajeve koje vode</ol>
-<ol>Ispišimo slučajeve i evidencije za određenu osobu</ol>
-<ol>Ispišimo sve osobe koje su osumnjičene za određeno kažnjivo djelo</ol>
-<ol>Pronađimo sve slučajeve koji sadrže KD i nisu riješeni</ol>
-<ol>Izračunajmo iznos zapljene za svaki pojedini slučaj</ol>
-<ol>Pronađi prosječnu vrijednost zapljene za pojedina KD</ol>
-<ol>Pronađi sve odjele i broj zaposlenika na njima</ol>
-<ol>Pronađi ukupnu vrijednost zapljena po odjelu i sortiraj ih po vrijednosti silazno</ol>
-<ol>Pronađi osobu koja mora odslužiti najveću ukupnu zatvorsku kaznu</ol>
-<ol>Prikaži sva vozila i broj slučajeva u kojima su se pojavila</ol>
-<ol>Pronađi mjesto s najviše slučajeva</ol>
-<ol>Pronađi mjesto s najmanje slučajeva</ol>
-<ol>Pronađi policijskog službenika koji je vodio najviše slučajeva</ol>
-<ol>Ispiši sva mjesta gdje nema evidentiranih kažnjivih djela u slučajevima</ol>
+ <ol>1) Ispiši prosječan broj godina osoba koje su prijavile digitalno nasilje</ol>
+ <ol>2) Prikaži osobu čiji je nestanak posljednji prijavljen</ol>
+<ol>3) Prikaži najčešću vrstu kažnjivog djela</ol>
+<ol>4) Ispišimo sve voditelje slučajeva i slučajeve koje vode</ol>
+<ol>5) Ispišimo slučajeve i evidencije za određenu osobu</ol>
+<ol>6) Ispišimo sve osobe koje su osumnjičene za određeno kažnjivo djelo</ol>
+<ol>7) Pronađimo sve slučajeve koji sadrže KD i nisu riješeni</ol>
+<ol>8) Izračunajmo iznos zapljene za svaki pojedini slučaj</ol>
+<ol>9) Pronađi prosječnu vrijednost zapljene za pojedina KD</ol>
+<ol>10) Pronađi sve odjele i broj zaposlenika na njima</ol>
+<ol>11) Pronađi ukupnu vrijednost zapljena po odjelu i sortiraj ih po vrijednosti silazno</ol>
+<ol>12) Pronađi osobu koja mora odslužiti najveću ukupnu zatvorsku kaznu</ol>
+<ol>13) Prikaži sva vozila i broj slučajeva u kojima su se pojavila</ol>
+<ol>14) Pronađi mjesto s najviše slučajeva</ol>
+<ol>15) Pronađi mjesto s najmanje slučajeva</ol>
+<ol>16) Pronađi policijskog službenika koji je vodio najviše slučajeva</ol>
+<ol>17) Ispiši sva mjesta gdje nema evidentiranih kažnjivih djela u slučajevima</ol>
 </ul>
 
 <hr>
 
 <ul><b>Pogledi:</b>
-<ol>Pronađimo sve osumnjičenike i njihova vozila</ol>
-<ol>Pronađimo sve policijske službenike koji su vlasnici vozila starijih od 10 godina</ol>
-<ol>Pronađimo sve osobe koje su počinile kažnjivo djelo pljačke i pri tome koristile pištolj</ol>
-<ol>Pronađimo sva evidentirana kažnjiva djela i njihov postotak pojavljivanja u slučajevima</ol>
-<ol>Pronađimo sva evidentirana sredstva utvrđivanja istine i broj slučajeva u kojima je svako od njih korišteno</ol>
-<ol>Pronađimo sve slučajeve i sredstva utvrđivanja istine u njima, te računamo trajanje svakog od slučajeva</ol>
-<ol>Pronađimo sve slučajeve i izvještaje vezane uz njih</ol>
-<ol>Pronađimo sve osobe i njihove odjele. Ukoliko osoba nije policijac i stoga nema svoj odjel, uz nju se ispisuje odgovarajuća obavijest</ol>
-<ol>Pronađimo sve voditelje slučajeva, ukupan broj slučajeva koje vode, ukupan broj riješenih slučajeva, ukupan broj neriješenih slučajeva i postotak riješenosti za svakog voditelja</ol>
-<ol>Pronađimo statistiku zapljena za svaku vrstu kažnjivog djela (prosjek, minimum, maksimum i broj vrijednosti)</ol>
-<ol>Izračunajmo ukupnu zatvorsku kaznu za svaki slučaj uz ograničenje da ona u RH ne smije prelaziti 50 godina</ol>
-<ol>Izračunajmo za svakog policijskog službenika dob i godine staža, te dohvatimo obavijest je li umirovljen ili ne</ol>
-<ol>Pronađimo sve osumnjičenike i kažnjiva djela za koja su osumnjičeni</ol>
-<ol>Pronađimo sve pse, broj slučajeva na kojima su radili, broj riješenih slučajeva i postotak rješenosti za svakog psa</ol>
-<ol>Nadogradimo prethodni pogled tako da dohvatimo najeikasnijeg psa, s najvećim postotkom riješenosti</ol>
-<ol>Pronađimo broj kazni zbog brze vožnje u zadnjih mjesec dana u svakom gradu</ol>
-<ol>Pronađimo sve osobe koje su skrivile više od 2 prometne nesreće u zadnjih godinu dana</ol>
-<ol>Pronađimo sva kažnjiva djela koja su se događala u slučajevima</ol>
-<ol>Pronađimo sve osobe, slučajeve u kojima su okrivljene i kažnjiva djela u njima</ol>
-<ol>Dohvatimo sve događaje koji su vezani uz slučajeve koji u sebi sadrže određeno kažnjivo djelo</ol>
-<ol>Dohvatimo sve slučajeve koji su se dogodili u posljednjih n dana</ol>
-<ol>Dohvatimo sve slučajeve koji sadrže određeno kažnjivo djelo i sortirajmo ih po vrijednosti zapljene silazno</ol>
-<ol>Dohvatimo sve slučajeve, njihovog voditelja i ukupnu vrijednost zapljena za svaki. Ako nema pronađenih slučajeva, dobivamo prikladnu obavijest</ol>
+<ol>1) Pronađimo sve osumnjičenike i njihova vozila</ol>
+<ol>2) Pronađimo sve policijske službenike koji su vlasnici vozila starijih od 10 godina</ol>
+<ol>3) Pronađimo sve osobe koje su počinile kažnjivo djelo pljačke i pri tome koristile pištolj</ol>
+<ol>4) Pronađimo sva evidentirana kažnjiva djela i njihov postotak pojavljivanja u slučajevima</ol>
+<ol>5) Pronađimo sva evidentirana sredstva utvrđivanja istine i broj slučajeva u kojima je svako od njih korišteno</ol>
+<ol>6) Pronađimo sve slučajeve i sredstva utvrđivanja istine u njima, te računamo trajanje svakog od slučajeva</ol>
+<ol>7) Pronađimo sve slučajeve i izvještaje vezane uz njih</ol>
+<ol>8) Pronađimo sve osobe i njihove odjele. Ukoliko osoba nije policijac i stoga nema svoj odjel, uz nju se ispisuje odgovarajuća obavijest</ol>
+<ol>9) Pronađimo sve voditelje slučajeva, ukupan broj slučajeva koje vode, ukupan broj riješenih slučajeva, ukupan broj neriješenih slučajeva i postotak riješenosti za svakog voditelja</ol>
+<ol>11) Pronađimo statistiku zapljena za svaku vrstu kažnjivog djela (prosjek, minimum, maksimum i broj vrijednosti)</ol>
+<ol>12) Izračunajmo ukupnu zatvorsku kaznu za svaki slučaj uz ograničenje da ona u RH ne smije prelaziti 50 godina</ol>
+<ol>13) Izračunajmo za svakog policijskog službenika dob i godine staža, te dohvatimo obavijest je li umirovljen ili ne</ol>
+<ol>14) Pronađimo sve osumnjičenike i kažnjiva djela za koja su osumnjičeni</ol>
+<ol>15) Pronađimo sve pse, broj slučajeva na kojima su radili, broj riješenih slučajeva i postotak rješenosti za svakog psa</ol>
+<ol>16) Nadogradimo prethodni pogled tako da dohvatimo najeikasnijeg psa, s najvećim postotkom riješenosti</ol>
+<ol>17) Pronađimo broj kazni zbog brze vožnje u zadnjih mjesec dana u svakom gradu</ol>
+<ol>18) Pronađimo sve osobe koje su skrivile više od 2 prometne nesreće u zadnjih godinu dana</ol>
+<ol>19) Pronađimo sva kažnjiva djela koja su se događala u slučajevima</ol>
+<ol>21) Pronađimo sve osobe, slučajeve u kojima su okrivljene i kažnjiva djela u njima</ol>
+<ol>22) Dohvatimo sve događaje koji su vezani uz slučajeve koji u sebi sadrže određeno kažnjivo djelo</ol>
+<ol>23) Dohvatimo sve slučajeve koji su se dogodili u posljednjih n dana</ol>
+<ol>24) Dohvatimo sve slučajeve koji sadrže određeno kažnjivo djelo i sortirajmo ih po vrijednosti zapljene silazno</ol>
+<ol>25) Dohvatimo sve slučajeve, njihovog voditelja i ukupnu vrijednost zapljena za svaki. Ako nema pronađenih slučajeva, dobivamo prikladnu obavijest</ol>
 </ul>
 
 <hr>
