@@ -214,4 +214,4 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <ol>https://github.com/petarally/BP2_policija_aplikacija</ol>
 
 
-
+###### Posebne zahvale asistentu Romeu Šajini, mag.inf na brojnim savjetima!
