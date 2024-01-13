@@ -1,7 +1,8 @@
+<p align="center">
 # Policija
-<center>Sveučilište Jurja Dobrile u Puli <br></br></center>
+Sveučilište Jurja Dobrile u Puli <br></br>
 Fakultet Informatike u Puli
-
+</p>
 Kolegij: Baze Podataka 2 <br></br>
 **Mentori:** 
  <ul>doc. dr. sc. Goran Oreški</ul>
