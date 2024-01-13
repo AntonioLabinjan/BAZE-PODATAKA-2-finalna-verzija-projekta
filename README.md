@@ -126,7 +126,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 
 <ul><b>Procedure:</b>
  
- <ul><h4>Trivijalne insert procedure:</h4></ul>
+ <h4>Trivijalne insert procedure:</h4>
      <ol>Unos područja uprave</ol>
      <ol>Unos mjesta</ol>
      <ol>Unos zgrade</ol>
@@ -145,7 +145,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
      <ol>Unos sredstva utvrđivanja istine</ol>
      <ol>Unos sredstva utvrđivanja istine u slučaju</ol>
 
- <ul><h4>Naprednije procedure:</h4></ul>
+ <h4>Naprednije procedure:</h4>
        <ol>Unos vozila uz napomenu o vlasništvu</ol>
        <ol>Godišnje nagrađivanje pasa</ol>
        <ol>Godišnje nagrađivanje zaposlenika</ol>
