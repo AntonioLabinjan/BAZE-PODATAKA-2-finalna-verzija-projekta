@@ -27,6 +27,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 
 <h4>Deliverables</h4>
 <ul><b>Tablice:</b>
+
 <ol>1) Podrucje_uprave</ol>
 <ol>2) Mjesto</ol>
 <ol>3) Zgrada</ol>
@@ -50,6 +51,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <hr>
 
 <ul><b>Upiti:</b>
+ 
  <ol>1) Ispiši prosječan broj godina osoba koje su prijavile digitalno nasilje</ol>
  <ol>2) Prikaži osobu čiji je nestanak posljednji prijavljen</ol>
 <ol>3) Prikaži najčešću vrstu kažnjivog djela</ol>
@@ -72,6 +74,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <hr>
 
 <ul><b>Pogledi:</b>
+ 
 <ol>1) Pronađimo sve osumnjičenike i njihova vozila</ol>
 <ol>2) Pronađimo sve policijske službenike koji su vlasnici vozila starijih od 10 godina</ol>
 <ol>3) Pronađimo sve osobe koje su počinile kažnjivo djelo pljačke i pri tome koristile pištolj</ol>
@@ -100,6 +103,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <hr>
 
 <ul><b>Trigeri:</b>
+ 
 <ol>1) Onemogućimo da se na slučaju koristi pas koji nije zadužen za kažnjiva djela u tom slučaju</ol>
 <ol>2) Zabranimo da se obriše područje uprave s više od 5 mjesta, a ako se obriše područje s manje od 5 mjesta, onda dobivamo upozorenje da je u tim mjestima provotno područje uprave obrisano i da moramo povezati mjesto s novim područjem</ol>
 <ol>3) Onemogućimo da se iz tablice osoba brišu osobe koje su aktivni zaposlenici</ol>
@@ -184,6 +188,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 </ul>
 <hr></hr>
 <ul><b><h3>Transakcije:</h3></b>
+ 
  <ol>1) Minimalno opterećenje psa</ol>
  <ol>2) Broj izvještaja za slučaj</ol>
  <ol>3) Događaji u zadnje 3 godine</ol>
@@ -192,6 +197,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 </ul>
 <hr></hr>
 <ul><b><h3>Korisnici:</h3></b>
+ 
  <ol>1) admin</ol>
  <ol>2) hr</ol>
  <ol>3) fizicka osoba</ol>
