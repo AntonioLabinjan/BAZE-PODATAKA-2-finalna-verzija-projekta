@@ -19,5 +19,5 @@ Kolegij: Baze Podataka 2 <br></br>
 <ol>Ana Rogalo</ol>
 <ol>Anastazija Širol</ol>
 
-Tema projekta je "Policija"
+Tema projekta je "Policija". <br></br>
 Na ovom se repozitoriju nalazi projektni zadatak tima 7.
