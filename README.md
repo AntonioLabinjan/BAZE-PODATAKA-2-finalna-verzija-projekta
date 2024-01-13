@@ -1,3 +1,5 @@
+![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+
 <p align="center">
 <b>Policija</b> <br></br>
 Sveučilište Jurja Dobrile u Puli <br></br>
