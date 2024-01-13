@@ -209,3 +209,10 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <ol><h3>link na aplikaciju:</h3></ol>
 https://github.com/petarally/BP2_policija_aplikacija
 </ol>
+
+
+<div style="background-color: #3498db; padding: 20px; color: #ffffff;">
+  <h2>Vaša Sekcija</h2>
+  <p>Ovo je tekst vaše sekcije s plavom pozadinom.</p>
+</div>
+
