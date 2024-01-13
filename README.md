@@ -101,7 +101,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <ol>Onemogućimo da se na slučaju koristi pas koji nije zadužen za kažnjiva djela u tom slučaju</ol>
 <ol>Zabranimo da se obriše područje uprave s više od 5 mjesta, a ako se obriše područje s manje od 5 mjesta, onda dobivamo upozorenje da je u tim mjestima provotno područje uprave obrisano i da moramo povezati mjesto s novim područjem</ol>
 <ol>Onemogućimo da se iz tablice osoba brišu osobe koje su aktivni zaposlenici</ol>
-<ol>Postavimo kažnjivo djelo psa na NULL ukoliko je kažnjivo djelo za koje je zadužen obrisano iz baze</ol
+<ol>Postavimo kažnjivo djelo psa na NULL ukoliko je kažnjivo djelo za koje je zadužen obrisano iz baze</ol>
 <ol>Zabranimo brisanje predmeta koji služe kao dokazi u aktivnim slučajevima</ol>
 <ol>Zabrana brisanja osoba koje su počinitelji u aktivnim slučajevima</ol>
 <ol>Zabrana brisanja izvještaja za nezavršene slučajeve i slučajeve koji su završili u manje od zadnjih 10 godina</ol>
