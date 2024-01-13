@@ -180,8 +180,14 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
  <ol>Avg slucaj osoba odjel</ol>
 </ul>
 <hr></hr>
-
-
+<ul><b>Transakcije</b></ul>
+ <ol>Minimalno opterećenje psa</ol>
+ <ol>Broj izvještaja za slučaj</ol>
+ <ol>Događaji u zadnje 3 godine</ol>
+ <ol>Dodavanje kažnjivih djela</ol>
+ <ol>Pregled službenih vozila</ol>
+</ul>
+<hr></hr>
 
 
  
