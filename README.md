@@ -45,6 +45,8 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <ol>Sui_slucaj</ol>
 </ul>
 
+<hr>
+
 <ul><b>Upiti:</b>
  <ol>Ispiši prosječan broj godina osoba koje su prijavile digitalno nasilje</ol>
  <ol>Prikaži osobu čiji je nestanak posljednji prijavljen</ol>
@@ -64,6 +66,8 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <ol>Pronađi policijskog službenika koji je vodio najviše slučajeva</ol>
 <ol>Ispiši sva mjesta gdje nema evidentiranih kažnjivih djela u slučajevima</ol>
 </ul>
+
+<hr>
 
 <ul><b>Pogledi:</b>
 <ol>Pronađimo sve osumnjičenike i njihova vozila</ol>
@@ -89,5 +93,34 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <ol>Dohvatimo sve slučajeve koji su se dogodili u posljednjih n dana</ol>
 <ol>Dohvatimo sve slučajeve koji sadrže određeno kažnjivo djelo i sortirajmo ih po vrijednosti zapljene silazno</ol>
 <ol>Dohvatimo sve slučajeve, njihovog voditelja i ukupnu vrijednost zapljena za svaki. Ako nema pronađenih slučajeva, dobivamo prikladnu obavijest</ol>
-
 </ul>
+
+<hr>
+
+<ul><b>Trigeri:</b>
+<ol>Onemogućimo da se na slučaju koristi pas koji nije zadužen za kažnjiva djela u tom slučaju</ol>
+<ol>Zabranimo da se obriše područje uprave s više od 5 mjesta, a ako se obriše područje s manje od 5 mjesta, onda dobivamo upozorenje da je u tim mjestima provotno područje uprave obrisano i da moramo povezati mjesto s novim područjem</ol>
+<ol>Onemogućimo da se iz tablice osoba brišu osobe koje su aktivni zaposlenici</ol>
+<ol>Postavimo kažnjivo djelo psa na NULL ukoliko je kažnjivo djelo za koje je zadužen obrisano iz baze</ol
+<ol>Zabranimo brisanje predmeta koji služe kao dokazi u aktivnim slučajevima</ol>
+<ol>Zabrana brisanja osoba koje su počinitelji u aktivnim slučajevima</ol>
+<ol>Zabrana brisanja izvještaja za nezavršene slučajeve i slučajeve koji su završili u manje od zadnjih 10 godina</ol>
+<ol>Osiguravanje točnosti spola pri unosu osoba</ol>
+<ol>Kreiranje stupca za praćenje ukupne vrijednosti zapljena kod svakog slučaja</ol>
+<ol>Premještanje završenih slučajeva u arhivu (pretvoreno u proceduru zato što ne želimo da netko slučajno automatski arhivira slučaj krivim updateom u bazi)</ol>
+<ol>Provjera da osoba nije nadređena sama sebi</ol>
+<ol>Provjera da su datumi početka i završetka slučaja različiti</ol>
+<ol>Časno umirovljenje pasa starijih od 10 godina</ol>
+<ol>Zabrana uporabe umirovljenih pasa u slučajevima</ol>
+<ol>Dodavanje posebne napomene za maloljetnike</ol>
+<ol>Onemogućavanje da maloljetnici budu vlasnici vozila</ol>
+<ol>Postavljanje datuma završetka slučaja na današnji pri izmjeni statusa u završeno</ol>
+<ol>Provjera da su počinitelj i svjedok različite osobe</ol>
+<ol>Provjera pravilne strukture e-maila</ol>
+<ol>Ograničenje broja slučajeva po zaposleniku</ol>
+<ol>Zabrana da isti voditelj otvara više slučajeva protiv iste osobe ukoliko su neki riješeni</ol>
+<ol>Osiguranje provođenja poligrafskog ispitivanja</ol>
+<ol>Zabrana promjene zgrade zaposlenika izvan njegovog područja uprave</ol>
+</ul>
+
+<hr></hr>
