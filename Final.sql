@@ -1248,7 +1248,7 @@ BEFORE DELETE ON Osoba
 FOR EACH ROW
 BEGIN
     DECLARE je_pocinitelj INT;
-    SELECT COUNT(*) INTO je_pocinitelj FROM Slucaj WHERE id_pocinitelj = OLD.id AND status != 'Završeno';
+    SELECT COUNT(*) INTO je_pocinitelj FROM Slucaj WHERE id_pocinitelj = OLD.id AND status != 'Riješen';
     
     IF je_pocinitelj > 0 THEN
         SIGNAL SQLSTATE '45000'
