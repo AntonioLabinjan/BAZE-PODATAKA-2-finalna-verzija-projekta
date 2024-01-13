@@ -144,7 +144,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
      <ol>Unos sredstva utvrđivanja istine</ol>
      <ol>Unos sredstva utvrđivanja istine u slučaju</ol>
 
- <ul>Ozbiljnije procedure:</ul>
+ <ul><h4>Naprednije procedure:</h4></ul>
        <ol>Unos vozila uz napomenu o vlasništvu</ol>
        <ol>Godišnje nagrađivanje pasa</ol>
        <ol>Godišnje nagrađivanje zaposlenika</ol>
