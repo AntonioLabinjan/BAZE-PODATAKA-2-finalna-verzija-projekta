@@ -173,7 +173,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
        <ol>32) Izracunaj starost vozila</ol>
 </ul>     
 <hr></hr>
-<ul><b><h3>Funkcije + upiti:</h3></b>
+<ul><b>Funkcije + upiti:</b>
  <ol>1) KDInfo</ol>
  <ol>2) Informacije o osobi po telefonu</ol>
  <ol>3) Dohvati slučaj i osobu</ol>
