@@ -26,24 +26,24 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 
 <h4>Deliverables</h4>
 <ul><b>Tablice:</b>
-<ol>1)Podrucje_uprave</ol>
-<ol>Mjesto</ol>
-<ol>Zgrada</ol>
-<ol>Radno_mjesto</ol>
-<ol>Odjeli</ol>
-<ol>Osoba</ol>
-<ol>Zaposlenik</ol>
-<ol>Vozilo</ol>
-<ol>Predmet</ol>
-<ol>Kaznjiva_djela</ol>
-<ol>Pas</ol>
-<ol>Slucaj</ol>
-<ol>Evidencija_dogadaja</ol>
-<ol>Kaznjiva_djela_u_slucaju</ol>
-<ol>Izvjestaji</ol>
-<ol>Zapljene</ol>
-<ol>Sredstvo_utvrdivanja_istine</ol>
-<ol>Sui_slucaj</ol>
+<ol>1) Podrucje_uprave</ol>
+<ol>2) Mjesto</ol>
+<ol>3) Zgrada</ol>
+<ol>4) Radno_mjesto</ol>
+<ol>5) Odjeli</ol>
+<ol>6) Osoba</ol>
+<ol>7) Zaposlenik</ol>
+<ol>8) Vozilo</ol>
+<ol>9) Predmet</ol>
+<ol>10) Kaznjiva_djela</ol>
+<ol>11) Pas</ol>
+<ol>12) Slucaj</ol>
+<ol>13) Evidencija_dogadaja</ol>
+<ol>14) Kaznjiva_djela_u_slucaju</ol>
+<ol>15) Izvjestaji</ol>
+<ol>16) Zapljene</ol>
+<ol>17) Sredstvo_utvrdivanja_istine</ol>
+<ol>18) Sui_slucaj</ol>
 </ul>
 
 <hr>
