@@ -25,7 +25,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 
 <h4>Deliverables</h4>
 <ul><b>Tablice:</b>
-<ul>Podrucje_uprave</ul>
+- Podrucje_uprave
 <ol>Mjesto</ol>
 <ol>Zgrada</ol>
 <ol>Radno_mjesto</ol>
