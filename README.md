@@ -5,6 +5,7 @@ Fakultet Informatike u Puli
 Kolegij: Baze Podataka 2 <br></br>
 </p>
 <hr>
+
 **Mentori:** 
  <ul>doc. dr. sc. Goran Oreški</ul>
  <ul>Romeo Šajina, mag. inf.</ul>
