@@ -3011,7 +3011,7 @@ DETERMINISTIC
 BEGIN
     DECLARE broj_zaposlenih INT;
     DECLARE broj_slucajeva INT;
-    DECLARE prosječan_broj_slucajeva DECIMAL(10, 2);
+    DECLARE prosjecan_broj_slucajeva DECIMAL(10, 2);
 
 
     SELECT COUNT(*) INTO broj_zaposlenih
@@ -3025,7 +3025,7 @@ BEGIN
 
 
     IF broj_zaposlenih > 0 THEN
-        SET prosječan_broj_slucajeva = broj_slucajeva / broj_zaposlenih;
+        SET prosjecan_broj_slucajeva = broj_slucajeva / broj_zaposlenih;
     ELSE
         SET prosjecan_broj_slučajeva = 0;
     END IF;
