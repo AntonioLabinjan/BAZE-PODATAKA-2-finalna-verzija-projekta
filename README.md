@@ -11,6 +11,7 @@ Kolegij: Baze Podataka 2 <br></br>
  <ul>Romeo Šajina, mag. inf.</ul>
 <hr>
 <br></br>
+
 **Članovi (abecednim redom):** 
 <ol>Maja Ajhorn</ol>
 <ol>Nika Horvat</ol>
