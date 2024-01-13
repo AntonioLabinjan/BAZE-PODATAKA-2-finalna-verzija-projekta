@@ -1,5 +1,5 @@
 # Policija
-Sveučilište Jurja Dobrile u Puli <br></br>
+<center>Sveučilište Jurja Dobrile u Puli <br></br></center>
 Fakultet Informatike u Puli
 
 Kolegij: Baze Podataka 2 <br></br>
