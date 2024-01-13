@@ -19,6 +19,13 @@ Kolegij: Baze Podataka 2 <br></br>
 <ol>Ana Rogalo</ol>
 <ol>Anastazija Širol</ol>
 <hr>
+- Maja Ajhorn
+- Nika Horvat
+- Antonio Labinjan
+- Petar Prenc
+- Ana Rogalo
+- Anastazija Širol
+
 Tema projekta je "Policija". <br></br>
 Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <hr>
