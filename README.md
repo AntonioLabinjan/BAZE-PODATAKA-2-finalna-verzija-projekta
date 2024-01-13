@@ -122,32 +122,28 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <ol>Osiguranje provođenja poligrafskog ispitivanja</ol>
 <ol>Zabrana promjene zgrade zaposlenika izvan njegovog područja uprave</ol>
 </ul>
-* a
- *a1
- *a2
-*b
- *b1
 <hr></hr>
 <ul><b>Procedure:</b>
    <ul>Trivijalne insert procedure:</ul>
-       <ol>Unos područja uprave</ol>
-       <ol>Unos mjesta</ol>
-       <ol>Unos zgrade</ol>
-       <ol>Unos radnog mjesta</ol>
-       <ol>Unos odjela</ol>
-       <ol>Unos osobe</ol>
-       <ol>Unos zaposlenika</ol>
-       <ol>Unos predmeta</ol>
-       <ol>Unos kažnjivog djela</ol>
-       <ol>Unos psa</ol>
-       <ol>Unos novog slučaja</ol>
-       <ol>Unos događaja u evidenciju</ol>
-       <ol>Unos kažnjivog djela u slučaju</ol>
-       <ol>Unos izvještaja</ol>
-       <ol>Unos zapljene</ol>
-       <ol>Unos sredstva utvrđivanja istine</ol>
-       <ol>Unos sredstva utvrđivanja istine u slučaju</ol>
-   <ul>Ozbiljnije procedure:</ul>
+     <ol>Unos područja uprave</ol>
+     <ol>Unos mjesta</ol>
+     <ol>Unos zgrade</ol>
+     <ol>Unos radnog mjesta</ol>
+     <ol>Unos odjela</ol>
+     <ol>Unos osobe</ol>
+     <ol>Unos zaposlenika</ol>
+     <ol>Unos predmeta</ol>
+     <ol>Unos kažnjivog djela</ol>
+     <ol>Unos psa</ol>
+     <ol>Unos novog slučaja</ol>
+     <ol>Unos događaja u evidenciju</ol>
+     <ol>Unos kažnjivog djela u slučaju</ol>
+     <ol>Unos izvještaja</ol>
+     <ol>Unos zapljene</ol>
+     <ol>Unos sredstva utvrđivanja istine</ol>
+     <ol>Unos sredstva utvrđivanja istine u slučaju</ol>
+ ### bla  
+ <ul>Ozbiljnije procedure:</ul>
        <ol>Unos vozila uz napomenu o vlasništvu</ol>
        <ol>Godišnje nagrađivanje pasa</ol>
        <ol>Godišnje nagrađivanje zaposlenika</ol>
