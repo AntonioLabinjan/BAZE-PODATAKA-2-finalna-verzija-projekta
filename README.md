@@ -1,5 +1,5 @@
 <p align="center">
-# Policija
+<b>Policija</b>
 Sveučilište Jurja Dobrile u Puli <br></br>
 Fakultet Informatike u Puli
 </p>
