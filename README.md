@@ -211,8 +211,3 @@ https://github.com/petarally/BP2_policija_aplikacija
 </ol>
 
 
-<div style="background-color: #3498db; padding: 20px; color: #ffffff;">
-  <h2>Vaša Sekcija</h2>
-  <p>Ovo je tekst vaše sekcije s plavom pozadinom.</p>
-</div>
-
