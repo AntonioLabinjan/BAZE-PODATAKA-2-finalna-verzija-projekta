@@ -204,3 +204,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
  <ol>4) detektiv</ol>
 </ul>
 <hr></hr> 
+
+<ol>
+https://github.com/petarally/BP2_policija_aplikacija
+</ol>
