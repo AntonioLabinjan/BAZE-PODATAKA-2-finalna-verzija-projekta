@@ -188,6 +188,10 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
  <ol>Pregled službenih vozila</ol>
 </ul>
 <hr></hr>
-
+<ul><b><h3>Korisnici</h3></b></ul>
+ <ol>admin</ol>
+ <ol>hr</ol>
+ <ol>fizicka osoba</ol>
+ <ol>detektiv</ol>
 
  
