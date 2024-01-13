@@ -123,8 +123,9 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <ol>Zabrana promjene zgrade zaposlenika izvan njegovog područja uprave</ol>
 </ul>
 <hr></hr>
-<ul><b>Procedure:</b>
-   #### <ul>Trivijalne insert procedure:</ul>
+<ul><b><h3>Procedure:</h3></b>
+ 
+ <ul><h4>Trivijalne insert procedure:</h4></ul>
      <ol>Unos područja uprave</ol>
      <ol>Unos mjesta</ol>
      <ol>Unos zgrade</ol>
@@ -142,7 +143,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
      <ol>Unos zapljene</ol>
      <ol>Unos sredstva utvrđivanja istine</ol>
      <ol>Unos sredstva utvrđivanja istine u slučaju</ol>
- ### bla  
+
  <ul>Ozbiljnije procedure:</ul>
        <ol>Unos vozila uz napomenu o vlasništvu</ol>
        <ol>Godišnje nagrađivanje pasa</ol>
