@@ -124,7 +124,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 </ul>
 <hr></hr>
 <ul><b>Procedure:</b>
-   <ul>Trivijalne insert procedure:</ul>
+   #### <ul>Trivijalne insert procedure:</ul>
      <ol>Unos područja uprave</ol>
      <ol>Unos mjesta</ol>
      <ol>Unos zgrade</ol>
