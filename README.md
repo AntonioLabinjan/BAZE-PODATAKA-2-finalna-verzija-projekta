@@ -2,7 +2,7 @@
 Sveučilište Jurja Dobrile u Puli
 Fakultet Informatike u Puli
 
-Kolegij: Baze Podataka 2
+Kolegij: Baze Podataka 2 <br></br>
 **Mentori:** 
  <ul>doc. dr. sc. Goran Oreški</ul>
  <ul>Romeo Šajina, mag. inf.</ul>
