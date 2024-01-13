@@ -99,29 +99,29 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <hr>
 
 <ul><b>Trigeri:</b>
-<ol>Onemogućimo da se na slučaju koristi pas koji nije zadužen za kažnjiva djela u tom slučaju</ol>
-<ol>Zabranimo da se obriše područje uprave s više od 5 mjesta, a ako se obriše područje s manje od 5 mjesta, onda dobivamo upozorenje da je u tim mjestima provotno područje uprave obrisano i da moramo povezati mjesto s novim područjem</ol>
-<ol>Onemogućimo da se iz tablice osoba brišu osobe koje su aktivni zaposlenici</ol>
-<ol>Postavimo kažnjivo djelo psa na NULL ukoliko je kažnjivo djelo za koje je zadužen obrisano iz baze</ol>
-<ol>Zabranimo brisanje predmeta koji služe kao dokazi u aktivnim slučajevima</ol>
-<ol>Zabrana brisanja osoba koje su počinitelji u aktivnim slučajevima</ol>
-<ol>Zabrana brisanja izvještaja za nezavršene slučajeve i slučajeve koji su završili u manje od zadnjih 10 godina</ol>
-<ol>Osiguravanje točnosti spola pri unosu osoba</ol>
-<ol>Kreiranje stupca za praćenje ukupne vrijednosti zapljena kod svakog slučaja</ol>
-<ol>Premještanje završenih slučajeva u arhivu (pretvoreno u proceduru zato što ne želimo da netko slučajno automatski arhivira slučaj krivim updateom u bazi)</ol>
-<ol>Provjera da osoba nije nadređena sama sebi</ol>
-<ol>Provjera da su datumi početka i završetka slučaja različiti</ol>
-<ol>Časno umirovljenje pasa starijih od 10 godina</ol>
-<ol>Zabrana uporabe umirovljenih pasa u slučajevima</ol>
-<ol>Dodavanje posebne napomene za maloljetnike</ol>
-<ol>Onemogućavanje da maloljetnici budu vlasnici vozila</ol>
-<ol>Postavljanje datuma završetka slučaja na današnji pri izmjeni statusa u završeno</ol>
-<ol>Provjera da su počinitelj i svjedok različite osobe</ol>
-<ol>Provjera pravilne strukture e-maila</ol>
-<ol>Ograničenje broja slučajeva po zaposleniku</ol>
-<ol>Zabrana da isti voditelj otvara više slučajeva protiv iste osobe ukoliko su neki riješeni</ol>
-<ol>Osiguranje provođenja poligrafskog ispitivanja</ol>
-<ol>Zabrana promjene zgrade zaposlenika izvan njegovog područja uprave</ol>
+<ol>1) Onemogućimo da se na slučaju koristi pas koji nije zadužen za kažnjiva djela u tom slučaju</ol>
+<ol>2) Zabranimo da se obriše područje uprave s više od 5 mjesta, a ako se obriše područje s manje od 5 mjesta, onda dobivamo upozorenje da je u tim mjestima provotno područje uprave obrisano i da moramo povezati mjesto s novim područjem</ol>
+<ol>3) Onemogućimo da se iz tablice osoba brišu osobe koje su aktivni zaposlenici</ol>
+<ol>4) Postavimo kažnjivo djelo psa na NULL ukoliko je kažnjivo djelo za koje je zadužen obrisano iz baze</ol>
+<ol>5) Zabranimo brisanje predmeta koji služe kao dokazi u aktivnim slučajevima</ol>
+<ol>6) Zabrana brisanja osoba koje su počinitelji u aktivnim slučajevima</ol>
+<ol>7) Zabrana brisanja izvještaja za nezavršene slučajeve i slučajeve koji su završili u manje od zadnjih 10 godina</ol>
+<ol>8) Osiguravanje točnosti spola pri unosu osoba</ol>
+<ol>9) Kreiranje stupca za praćenje ukupne vrijednosti zapljena kod svakog slučaja</ol>
+<ol>10) Premještanje završenih slučajeva u arhivu (pretvoreno u proceduru zato što ne želimo da netko slučajno automatski arhivira slučaj krivim updateom u bazi)</ol>
+<ol>11) Provjera da osoba nije nadređena sama sebi</ol>
+<ol>12) Provjera da su datumi početka i završetka slučaja različiti</ol>
+<ol>13) Časno umirovljenje pasa starijih od 10 godina</ol>
+<ol>14) Zabrana uporabe umirovljenih pasa u slučajevima</ol>
+<ol>15) Dodavanje posebne napomene za maloljetnike</ol>
+<ol>16) Onemogućavanje da maloljetnici budu vlasnici vozila</ol>
+<ol>17) Postavljanje datuma završetka slučaja na današnji pri izmjeni statusa u završeno</ol>
+<ol>18) Provjera da su počinitelj i svjedok različite osobe</ol>
+<ol>19) Provjera pravilne strukture e-maila</ol>
+<ol>20) Ograničenje broja slučajeva po zaposleniku</ol>
+<ol>21) Zabrana da isti voditelj otvara više slučajeva protiv iste osobe ukoliko su neki riješeni</ol>
+<ol>22) Osiguranje provođenja poligrafskog ispitivanja</ol>
+<ol>23) Zabrana promjene zgrade zaposlenika izvan njegovog područja uprave</ol>
 </ul>
 <hr></hr>
 
