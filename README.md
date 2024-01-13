@@ -18,6 +18,7 @@ Kolegij: Baze Podataka 2 <br></br>
 <ol>Petar Prenc</ol>
 <ol>Ana Rogalo</ol>
 <ol>Anastazija Širol</ol>
-
+<br></br>
+<hr>
 Tema projekta je "Policija". <br></br>
 Na ovom se repozitoriju nalazi projektni zadatak tima 7.
