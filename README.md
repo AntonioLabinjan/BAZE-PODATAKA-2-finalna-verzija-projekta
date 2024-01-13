@@ -191,7 +191,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
  <ol>15)Avg slucaj osoba odjel</ol>
 </ul>
 <hr></hr>
-<ul><b><h3>Transakcije:</h3></b>
+<ul><b>Transakcije:</b>
  
  <ol>1) Minimalno opterećenje psa</ol>
  <ol>2) Broj izvještaja za slučaj</ol>
@@ -200,7 +200,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
  <ol>5) Pregled službenih vozila</ol>
 </ul>
 <hr></hr>
-<ul><b><h3>Korisnici:</h3></b>
+<ul><b>Korisnici:</b>
  
  <ol>1) admin</ol>
  <ol>2) hr</ol>
@@ -210,7 +210,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <hr></hr> 
 
 <ol>
-<ol><h3>link na aplikaciju:</h3></ol>
+<ol>link na aplikaciju:</ol>
 https://github.com/petarally/BP2_policija_aplikacija
 </ol>
 
