@@ -29,7 +29,7 @@ Na ovom se repozitoriju nalazi projektni zadatak tima 7.
 <ol>Zgrada</ol>
 <ol>Radno_mjesto</ol>
 <ol>Odjeli</ol>
-<ol>Osoba<ol>
+<ol>Osoba</ol>
 <ol>Zaposlenik</ol>
 <ol>Vozilo</ol>
 <ol>Predmet</ol>
