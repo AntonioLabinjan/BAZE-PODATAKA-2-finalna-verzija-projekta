@@ -1230,7 +1230,7 @@ BEFORE DELETE ON Predmet
 FOR EACH ROW
 BEGIN
     DECLARE aktivan INT;
-    SELECT COUNT(*) INTO aktivan FROM Slucaj WHERE id_dokaz = OLD.id AND status != 'Završeno';
+    SELECT COUNT(*) INTO aktivan FROM Slucaj WHERE id_dokaz = OLD.id AND status != 'Riješen';
     
     IF aktivan > 0 THEN
         SIGNAL SQLSTATE '45000'
