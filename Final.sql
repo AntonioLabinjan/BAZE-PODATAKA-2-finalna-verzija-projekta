@@ -1346,7 +1346,7 @@ BEGIN
     ELSEIF slucaj_status <> 'riješen' THEN
         SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Slučaj nije riješen i ne može biti premješten u arhivu.';
     ELSE
-        INSERT INTO Arhiva (id_slucaj) VALUES (slucaj_id);
+        INSERT INTO Arhiva (id_slucaj) VALUES (p_slucaj_id);
         DELETE FROM Slucaj WHERE id = p_slucaj_id;
     END IF;
 END;
