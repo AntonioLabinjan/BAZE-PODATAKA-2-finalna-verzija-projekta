@@ -1598,7 +1598,7 @@ BEGIN
     
     SELECT COUNT(*) INTO broj_poligrafa
     FROM Sui_slucaj
-    WHERE id_slucaj IN (SELECT id FROM Slucaj WHERE id_pocinitelj = p_id_pocinitelj);
+    WHERE id_slucaj IN (SELECT id FROM Slucaj WHERE id_pocinitelj = p_id_pocinitelj AND id_sui = 1);
 
     WHILE broj_poligrafa < 2 DO
         INSERT INTO Sui_slucaj (id_sui, id_slucaj)
