@@ -1330,6 +1330,7 @@ CREATE TABLE Arhiva
 (id_slucaj INT, FOREIGN KEY (id_slucaj) REFERENCES Slucaj(id));
 
 ALTER TABLE Arhiva DROP FOREIGN KEY arhiva_ibfk_1;
+ALTER TABLE Evidencija_Dogadaja DROP FOREIGN KEY evidencija_dogadaja_ibfk_2;
 
 DELIMITER //
 
