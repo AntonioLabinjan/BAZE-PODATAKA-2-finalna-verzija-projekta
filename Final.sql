@@ -2508,7 +2508,6 @@ SELECT KDInfo('Ubojstvo');
 
     SELECT
     KDInfo(KD.Naziv) AS KaznjivoDjeloInfo,
-    COUNT(KS.id_kaznjivo_djelo) AS BrojPojavljivanja
 FROM Kaznjiva_Djela_u_Slucaju KS
 INNER JOIN Kaznjiva_djela KD ON KS.id_kaznjivo_djelo = KD.ID
 INNER JOIN Slucaj S ON KS.id_slucaj = S.ID
